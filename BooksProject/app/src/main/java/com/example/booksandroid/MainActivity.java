@@ -1,5 +1,6 @@
 package com.example.booksandroid;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -9,6 +10,7 @@ import com.google.android.material.tabs.TabLayout;
 import androidx.viewpager.widget.ViewPager;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.os.Handler;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -16,6 +18,7 @@ import android.view.View;
 import com.example.booksandroid.ui.main.SectionsPagerAdapter;
 
 public class MainActivity extends AppCompatActivity {
+    public static final int SPLASH_TIME = 4000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

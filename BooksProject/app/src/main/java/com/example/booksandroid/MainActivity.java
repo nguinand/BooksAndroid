@@ -24,14 +24,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                Intent homeIntent = new Intent(MainActivity.this, SplashScreen.class);
-                startActivity(homeIntent);
-                finish();
-            }
-        }, SPLASH_TIME);
         SectionsPagerAdapter sectionsPagerAdapter = new SectionsPagerAdapter(this, getSupportFragmentManager());
         ViewPager viewPager = findViewById(R.id.view_pager);
         viewPager.setAdapter(sectionsPagerAdapter);
